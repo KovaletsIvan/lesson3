@@ -60,12 +60,16 @@ raiseToDegree(a, b);
 
 // Task 5
 
+var ar;
 function lastArrayEllement(x, inintialArr) {
-  var ar = inintialArr.slice(-x);
+  if (x == 0 || inintialArr.length == 0) {
+    console.log("Inccorect Data");
+  }
+  else { var ar = inintialArr.slice(-x) };
 
   console.log(ar);
 }
-lastArrayEllement(2, [7, 8, 9, 75, 34, 22]);
+lastArrayEllement((2),[14, 17, 2, 4, 8, 9]);
 
 // Task 6
 
